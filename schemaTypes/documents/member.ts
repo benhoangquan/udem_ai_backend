@@ -32,7 +32,6 @@ export default {
         list: [
           { title: 'Member', value: 'member' },
           { title: 'Executive', value: 'executive' },
-          { title: 'Admin', value: 'admin' },
           { title: 'Alumni', value: 'alumni' },
         ],
       },
