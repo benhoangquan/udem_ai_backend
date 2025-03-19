@@ -32,7 +32,6 @@ export default {
         list: [
           { title: 'Member', value: 'member' },
           { title: 'Executive', value: 'executive' },
-          { title: 'Admin', value: 'admin' },
           { title: 'Alumni', value: 'alumni' },
         ],
       },
@@ -69,29 +68,6 @@ export default {
       type: 'socialLinks',
     },
     {
-      name: 'achievements',
-      title: 'Achievements',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'achievement' }],
-        },
-      ],
-    },
-    {
-      name: 'badges',
-      title: 'Badges',
-      type: 'array',
-      of: [{ type: 'badge' }],
-    },
-    {
-      name: 'points',
-      title: 'Points',
-      type: 'number',
-      initialValue: 0,
-    },
-    {
       name: 'joinDate',
       title: 'Join Date',
       type: 'date',
@@ -109,59 +85,6 @@ export default {
         ],
       },
       initialValue: 'active',
-    },
-    {
-      name: 'projects',
-      title: 'Projects',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'project' }],
-        },
-      ],
-    },
-    {
-      name: 'contributions',
-      title: 'Contributions',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {
-              name: 'type',
-              title: 'Contribution Type',
-              type: 'string',
-              options: {
-                list: [
-                  { title: 'Project', value: 'project' },
-                  { title: 'Event', value: 'event' },
-                  { title: 'Workshop', value: 'workshop' },
-                  { title: 'Content', value: 'content' },
-                  { title: 'Other', value: 'other' },
-                ],
-              },
-            },
-            {
-              name: 'description',
-              title: 'Description',
-              type: 'text',
-            },
-            {
-              name: 'date',
-              title: 'Date',
-              type: 'date',
-            },
-            {
-              name: 'pointsEarned',
-              title: 'Points Earned',
-              type: 'number',
-              initialValue: 0,
-            },
-          ],
-        },
-      ],
     },
   ],
   preview: {

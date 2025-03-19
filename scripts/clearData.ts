@@ -9,7 +9,7 @@ async function clearData() {
 
   try {
     // First, get all documents
-    const query = `*[_type in ["activity", "member", "event", "generalInfo", "post", "project", "resource", "tool"]]`
+    const query = `*[_type in ["event", "project", "tool"]]`
     const documents = await client.fetch(query)
     
     if (documents.length === 0) {
