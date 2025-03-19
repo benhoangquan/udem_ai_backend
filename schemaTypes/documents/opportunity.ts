@@ -27,7 +27,7 @@ export default {
           { title: 'Volunteer', value: 'volunteer' },
           { title: 'Leadership', value: 'leadership' },
           { title: 'Collaboration', value: 'collaboration' },
-          { title: 'Research', value: 'research' },
+          { title: 'Research/Project', value: 'research' },
           { title: 'Teaching', value: 'teaching' },
           { title: 'Other', value: 'other' },
         ],
