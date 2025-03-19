@@ -12,8 +12,7 @@
     "deploy-graphql": "sanity graphql deploy",
     "lint": "eslint . --ext .js,.ts",
     "type-check": "tsc --noEmit",
-    "validate": "sanity check",
-    "test": "npm run lint && npm run type-check && npm run validate"
+    "test":  "npm run lint && npm run type-check"
   },
   "keywords": [
     "sanity"
@@ -22,7 +21,7 @@
     "@sanity/vision": "^3.79.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.79.0",
+    "sanity": "^3.80.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

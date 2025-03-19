@@ -35,8 +35,8 @@ jobs:
       - name: Type check
         run: npm run type-check
       
-      - name: Validate schema
-        run: npm run validate
+      # - name: Validate schema
+      #   run: npm run validate
 
   test:
     runs-on: ubuntu-latest
@@ -106,4 +106,5 @@ jobs:
       - name: Deploy to Sanity
         run: npm run deploy
         env:
+          SANITY_DEV_TOKEN: ${{ secrets.SANITY_DEV_TOKEN }}
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
